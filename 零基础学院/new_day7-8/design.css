@@ -1,0 +1,181 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	width: 100%;
+	height: 90px;
+	background-color: black;
+}
+
+.header .header_content {
+	width: 960px;
+	margin: auto;
+	position: relative;
+}
+
+.header .header_content .logo {
+	color: white;
+	float: left;
+	padding: 20px;
+}
+
+.header .header_content .r_t_nav {
+	position: absolute;
+	top: 5px;
+	right: 0;
+}
+
+.header .header_content .r_t_nav a {
+	color: white;
+	display: block;
+	float: left;
+	margin-left: 8px;
+
+}
+
+.banner {
+	width: 100%;
+	height: 300px;
+	background-color: #00cb00;
+	position: relative;
+}
+
+.banner .num_1,
+.banner .num_3,
+.banner .num_4 {
+	width: 30px;
+	height: 35px;
+	line-height: 35px;
+	background-color: #bfb;
+	border:1px solid black;
+	text-align: center;
+	font-weight: lighter;
+}
+
+.banner .num_1 {
+	position: absolute;
+	right: 300px;
+	bottom: 5px;	
+}
+
+.banner .num_2 {
+	width: 30px;
+	height: 45px;
+	line-height: 56px;
+	background-color: white;
+	border: 1px solid black;
+	text-align: center;
+	font-weight: lighter;
+	position: absolute;
+	right: 262px;
+	bottom: 5px;
+}
+
+.banner .num_3 {
+	position: absolute;
+	right: 225px;
+	bottom: 5px;
+}
+
+.banner .num_4 {
+	position: absolute;
+	right: 188px;
+	bottom: 5px;
+}
+
+
+.nav {
+	width: 100%;
+	height: 80px;
+	border-bottom: 1px solid #d0d0d0;
+}
+
+.nav .nav_menu {
+	width: 960px;
+	height: 100%;
+	margin:auto;
+	position: relative;
+}
+
+.nav_menu .nav_menu_1,
+.nav_menu .nav_menu_2,
+.nav_menu .nav_menu_3 {
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-top: 1px solid #d0d0d0;
+	border-left: 1px solid #d0d0d0;
+	border-right: 1px solid #d0d0d0;
+	border-bottom: none;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+
+.nav_menu .nav_menu_1 {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-bottom:white;
+}
+
+.nav_menu .nav_menu_2 {
+	position: absolute;
+	left: 102px;
+	bottom: 0;
+	background-color: #f0f0f0;
+}
+
+.nav_menu .nav_menu_3 {
+	position: absolute;
+	left: 204px;
+	bottom: 0;
+	background-color: #f0f0f0;
+}
+
+
+.content {
+	width: 960px;
+	margin:auto;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.content div {
+	padding: 80px;
+	margin: 5px;
+	text-align: center;
+	border:1px solid #d0d0d0;
+}
+
+.content .size_1 {
+	flex: 100px;
+}
+
+.content .size_2 {
+	flex: 68px;
+
+}
+
+.content .size_2 p {
+	width: 48px;
+	white-space: nowrap;
+
+}
+
+.bottom {
+	width: 100%;
+	height: 120px;
+	background-color: gray;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.bottom span {
+	display: block;
+	padding-top: 10px;
+	color: white;
+}
