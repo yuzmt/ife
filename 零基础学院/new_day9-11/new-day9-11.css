@@ -1,0 +1,589 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	width: 85%;
+	margin: 20px auto;
+	
+}
+
+/*第一部分*/
+
+.header {
+	width: 100%;
+	height: 600px;
+	background-image: url("images/background-1.png");
+	background-size: 100% 100%;
+}
+
+.header h1 {
+	color: #fff;
+	font-size: 40px;
+	font-weight: lighter;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.header span {
+	display: block;
+	color: #adadad;
+	padding: 40px 240px;
+	text-align: center;
+}
+
+.header .sign_up {
+	width: 680px;
+	height: 180px;
+	border: 1px solid #5b5b5b;
+	margin: 20px auto;
+	position: relative;
+}
+
+.header .sign_up h4 , span {
+	color: #adadad;
+	text-align: center;
+	font-weight: lighter;
+}
+
+.header .sign_up h4 {
+	padding-top: 35px;
+}
+
+.header .sign_up span {
+	display: block;
+	font-size: 12px;
+	margin-top: -20px;
+}
+
+
+
+.header .sign_up .text_1,
+.header .sign_up .text_2 {
+	outline: 0;
+	width: 200px;
+	height: 35px;
+	color: #fff;
+	border: 1px solid #5b5b5b;
+	background-color: transparent;
+}
+
+.header .sign_up .text_1 {
+	position: absolute;
+	left: 80px;
+	bottom: 20px;
+}
+.header .sign_up .text_2 {
+	position: absolute;
+	left: 300px;
+	bottom: 20px;
+}
+.header .sign_up .sub {
+	width: 80px;
+	height: 35px;
+	background-color: #fff;
+	position: absolute;
+	right: 80px;
+	bottom: 20px;
+}
+
+/*第二部分*/
+
+.feature {
+	width: 100%;
+	height: 500px;
+}
+
+.feature h6,
+.feature h2 {
+	text-align: center;
+	font-weight: lighter;
+}
+
+.feature h6 {
+	padding-top: 70px;
+}
+
+.feature h2 {
+	font-size: 30px;
+	padding-top: 20px;
+	padding-left: 300px;
+	padding-right: 300px;
+}
+
+.feature .section_wrap {
+	display: flex;
+	flex-flow: row wrap;
+}
+.feature .section_wrap div {
+	
+	flex: 400px;
+	height: 180px;
+	border: 1px solid transparent;
+	padding: 25px;
+
+}
+
+.feature .section_wrap .one {
+	margin-right: 50px;
+}
+
+.feature .section_wrap .one h4 {
+	padding-left: 200px;
+	padding-top: 20px;
+}
+.feature .section_wrap .one p {
+	padding-left: 200px;
+	padding-top: 10px;
+	font-weight: normal;
+	
+}
+.feature .section_wrap .section_1 p {
+	margin-left: 60px;
+	margin-top: -20px;
+}
+
+.feature .section_wrap .section_2 p{
+	margin-left: 60px;
+	margin-top: -2px;
+}
+
+.feature .section_wrap .section_3 p {
+	margin-left: 60px;
+	margin-top: -8px;
+}
+
+.feature .section_wrap .section_4 p {
+	margin-left: 60px;
+	margin-top: -8px;
+}
+
+.feature .section_wrap .two h4 {
+	padding-right: 200px;
+	padding-top: 20px;
+}
+.feature .section_wrap .two p {
+	padding-right: 200px;
+	padding-top: 10px;
+	font-weight: normal;
+	margin-left: 60px;
+	margin-top: -20px;
+}
+
+
+
+.feature .section_wrap .section_1 h4::before {
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 45px;
+	background-image: url("images/Iphone Icon.jpg");
+	background-size: 100% 100%;
+	vertical-align: text-top;
+    margin-right: 30px;
+}
+
+.feature .section_wrap .section_2 h4::before {
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url("images/Check Icon.jpg");
+	background-size: 100% 100%;
+	vertical-align: text-top;
+    margin-right: 30px;
+}
+
+.feature .section_wrap .section_3 h4::before {
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url("images/Pencil Icon.jpg");
+	background-size: 100% 100%;
+	vertical-align: text-top;
+    margin-right: 30px;
+}
+
+.feature .section_wrap .section_4 h4::before {
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url("images/Settings Icon.jpg");
+	background-size: 100% 100%;
+	vertical-align: text-top;
+    margin-right: 30px;
+}
+
+
+/*第三部分*/
+.action {
+	width: 100%;
+	height: 550px;
+	background-image: url("images/Background-2.png");
+	background-size: 100% 100%;
+	margin-top: 70px;
+	
+}
+
+.action .text {
+	position: relative;
+}
+
+.action .text h1 {
+	color: #fff;
+	font-weight: lighter;
+	position: absolute;
+	left: 180px;
+	top: 110px;
+}
+
+.action .text p {
+	color: #f0f0f0;
+	font-weight: lighter;
+	position: absolute;
+	left: 180px;
+	top: 250px;
+}
+
+.action .text input {
+	background-color: transparent;
+	border: 1px solid #d0d0d0;
+	height: 40px;
+	width: 170px;
+	
+}
+
+.action .text .btn_1 {
+	position: absolute;
+	left: 180px;
+	top: 390px;
+	background-color: #fff;
+}
+
+.action .text .btn_2 {
+	position: absolute;
+	left: 370px;
+	top: 390px;
+	color: #fff;
+}
+
+.action .picture {
+	float: right;
+	width: 50%;
+	height:100%;
+	position: relative;
+}
+
+.action .picture  img{
+	width: 413px;
+	height: 366px;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 0;
+	top: 95px;
+
+}
+
+/*第四部分*/
+.content_top {
+	width: 100%;
+	height: 350px;
+	/*border: 1px solid black;*/
+}
+
+.content_top p {
+	display: block;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 70px;
+	font-weight: lighter;
+}
+
+.content_top .sing,
+.content_top .hero,
+.content_top .portland {
+	float: left;
+	width: 250px;
+	height: 250px;
+	/*border: 1px solid #000;*/
+	margin-top: 70px;
+}
+
+.content_top .sing {
+	margin-left: 160px;
+}
+
+.content_top .hero , .portland {
+	margin-left: 40px;
+}
+
+.content_top img {
+	position: relative;
+	left: 30%;
+
+}
+
+.content_top .sing p,.hero p,.portland p {
+	font-size: 16px;
+	margin-top: -5px;
+	padding: 15px;
+
+}
+
+/*第五部分*/
+.content_bottom {
+	width: 100%;
+	height: 650px;
+	/*border: 1px solid black;*/
+}
+
+.content_bottom .leaf,.bird {
+	width: 100%;
+	height: 50%;
+	position: relative;
+}
+
+.content_bottom .leaf img {
+	width: 40%;
+	margin-left: 150px;
+	font-weight: lighter;
+}
+
+.content_bottom .leaf .leaf_text {
+	width: 30%;
+	position: absolute;
+	top: 80px;
+	right: 100px;
+	font-weight: lighter;
+}
+
+.content_bottom .bird .bird_text {
+	width: 35%;
+	padding-top: 70px;
+	position: absolute;
+	top: 35px;
+	left: 150px;
+	font-weight: lighter;
+}
+
+.content_bottom .bird img {
+	width: 40%;
+	position: absolute; 
+	top: 35px;
+	right: 100px;
+	font-weight: lighter;
+}
+
+
+/*第六部分*/
+.team {
+	width: 100%;
+	height: 850px;
+	/*border: 1px solid black;*/
+}
+
+.team .team_text {
+	width: 60%;
+	margin:0 auto;
+}
+
+.team .team_text p {
+	text-align: center;
+}
+
+.team .team_text .bigger {
+	font-size: 30px;
+	padding: 60px 0 30px 0;
+}
+
+.team .team_text .lighter {
+	font-weight: lighter;
+}
+
+.team .team_p {
+	position: relative;
+}
+
+.team .team_p .p_2 img,
+.team .team_p .p_3 img,
+.team .team_p .p_4 img {
+	width: 400px;
+	height: 289px;
+	
+}
+
+.team .team_p .p_1 {
+	width: 400px;
+	height: 289px;
+} 
+
+.team .team_p .p_1 {
+	background-image: url("images/Userpic 1.jpg");
+	background-size: 100% 100%;
+	position: absolute;
+	left: 150px;
+	top: 30px;
+}
+
+.team .team_p .p_1{
+	text-align: center;
+	color: #f0f0f0;
+}
+
+.team .team_p .p_1 .p_1_big {
+	margin-top: 90px;
+	font-size: 20px;
+}
+
+.team .team_p .p_1 .p_1_small {
+	margin-top: 10px;
+	font-weight: lighter;
+}
+
+.team .team_p .p_2 {
+	position: absolute;
+	right: 150px;
+	top: 30px;
+}
+.team .team_p .p_3 {
+	position: absolute;
+	left: 150px;
+	top: 349px;
+}
+.team .team_p .p_4 {
+	position: absolute;
+	right: 150px;
+	top: 349px;
+}
+
+/*第七部分*/
+.contact {
+	width: 100%;
+	height: 600px;
+	/*border: 1px solid black;*/
+}
+
+.contact .send {
+	width: 310px;
+	height: 400px;
+	float: left;
+	padding: 30px;
+	margin-left: 150px;
+	margin-top: 100px;
+	border: 1px solid #d0d0d0;
+}
+
+.contact .send p {
+	margin-left: 28px;
+	margin-bottom: 30px;
+}
+
+.contact .send input {
+	width: 250px;
+	height: 40px;
+	margin:10px 0;
+	color: #c0c0c0;
+}
+
+.contact .send input:nth-child(4) {
+	height: 100px;
+}
+
+.contact .send .sub {
+	background-color: #000;
+	color: #fff;
+	border-color: transparent;
+}
+
+.contact .contacts {
+	float: left;
+	width: 300px;
+
+	margin-left: 150px;
+	margin-top: 100px;
+}
+
+.contact .contacts .contacts_text p {
+	margin:35px 0;
+	font-size: 30px;
+}
+
+.contact .contacts .contacts_logo {
+	margin-top: 40px;
+	font-family: initial;
+	position: relative;
+}
+
+.contact .contacts .contacts_logo p {
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+
+.contact .contacts .contacts_logo .map::before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 20px;
+	background-image: url("images/Map Icon.jpg");
+	background-size: 100% 100%;
+	position: absolute;
+	left: 0;
+	top: 10px;
+}
+
+.contact .contacts .contacts_logo .phone::before {
+	content: "";
+	display: inline-block;
+	width: 22px;
+	height: 23px;
+	background-image: url("images/Phone Icon.jpg");
+	background-size: 100% 100%;
+	position: absolute;
+	left: 0;
+	top: 63px;
+}
+
+.contact .contacts .contacts_logo .mail::before {
+	content: "";
+	display: inline-block;
+	width: 22px;
+	height: 19px;
+	background-image: url("images/Mail Icon.jpg");
+	background-size: 100% 100%;
+	position: absolute;
+	left: 0;
+	top: 108px;
+}
+
+/*第八部分*/
+
+.footer {
+	width: 100%;
+	height: 300px;
+	background-color: #000;
+}
+
+.footer .part_1,
+.footer .part_2,
+.footer .part_3,
+.footer .part_4 {
+	width: 23%;
+	height: 250px;
+	float: left;
+	margin-left: 20px;
+}
+
+.footer span {
+	display: block;
+	margin-top: 20px;
+}
+
+.footer p {
+	color: #fff;
+	text-align: center;
+	margin-top: 50px;
+}
