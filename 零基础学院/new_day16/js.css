@@ -1,0 +1,128 @@
+
+		.wrapper{
+			width: 70%;
+			height: 100%;
+			margin: 0 auto;
+			position: relative;
+			border: 1px solid #408080;
+			border-top:none;
+		}
+		#j_li{
+			background-color: #408080;
+			height: 80px;
+			line-height: 80px;
+			text-align: center;
+			margin-bottom:25px;
+		}
+		.content{
+			position: relative;
+		}
+		.p_details ul li{
+			list-style: none;
+		}
+		.content .p_details{
+			margin-bottom:120px;
+		}
+		.content .p_details .identity{
+			float: left; 
+			
+		}
+		.content .p_details .image{
+			position: absolute;
+			right: 35px;
+			
+			
+		}
+		.content .p_details .image img{
+			width: 200px;
+			
+		}
+		
+		.content ul{
+			list-style: square;
+		}
+		.content .edu_background{
+			margin-top: 10px;
+		}
+		.content .edu_background .time{
+			float: left;
+			margin-top:-20px;
+			
+		}
+		.content .edu_background .school{
+			float: left;
+			margin-top:-20px;
+			position: absolute;
+			left: 300px;
+		}
+		.content .edu_background .major{
+			float: left;
+			margin-top:-20px;
+			position: absolute;
+			left: 570px;
+		}
+		.content .edu_background .education{
+			float: left;
+			margin-top:-20px;
+			position: absolute;
+			right: 50px;
+		}
+		.content .edu_background .c_content{
+			margin-top:60px;
+			
+		}
+		.content .s_experience .s_time{
+			float: left;
+			margin-top:-20px;
+		}
+		.content .s_experience .company{
+			float: left;
+			margin-top:-20px;
+			position: absolute;
+			left: 430px;
+		}
+		.content .s_experience .job{
+			float: left;
+			margin-top:-20px;
+			position: absolute;
+			right: 40px;
+		}
+		.content .s_experience .details{
+			margin-top:60px;
+		}
+		.content .c_experience .time{
+			float: left;
+			margin-top:-20px;
+		}
+		.content .c_experience .company{
+			float: left;
+			margin-top:-20px;
+			position: absolute;
+			left: 450px;
+		}
+		.content .c_experience .job{
+			float: left;
+			margin-top:-20px;
+			position: absolute;
+			right: 30px;
+		}
+		.content .c_experience .details{
+			margin-top:60px;
+		}
+
+		#lookme {
+			float: left;
+			width: 180px;
+			height: 200px;
+			border: 1px solid #408080;
+			border-radius: 15px;
+			box-shadow: 3px 3px 4px #408080;
+		}
+
+		#btn {
+			background-color: black;
+			width: 50px;
+			height: 30px;
+			border-color: transparent;
+			color: #fff;
+		}
