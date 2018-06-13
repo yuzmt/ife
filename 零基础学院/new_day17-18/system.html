@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="decNumber" type="number" placeholder="输入一个十进制非负整数">
+    <button id="transBtn">转化为二进制</button>
+    <p id="result">运算结果</p>
+    <script>
+
+			function dec2bin(decNumber) {
+			    // 在这里实现你的转化方法，注意需要判断输入必须为一个非负整数
+			   
+			    var num1; //商
+			    var num2;//余数
+			    var num = Number(decNumber);//被除数
+			    var arr = [];
+			    if(num < 0) {
+			    	alert("请输入正数！！")
+			    }else {
+			    	while(num1 != 0) {
+			    		num1 = parseInt(num / 2);
+			    		num2 = num % 2;
+			    		num = num1;
+			    		arr.unshift(num2);
+			    	}
+			    }
+			    return arr.join("");
+			}
+
+			// document.getElementById("transBtn").innerHTML = arr[];
+			// 实现党点击转化按钮时，将输入的十进制数字转化为二进制，并显示在result的p标签内
+			// Some coding
+
+			// var dec = document.getElementById("decNumber").value;
+			var btn = document.getElementById("transBtn");
+			var p = document.getElementById("result");
+			btn.onclick = function() {
+				p.innerHTML = "运算结果：" + dec2bin(document.getElementById("decNumber").value);
+			}
+
+    </script>
+</body>
+</html>
+
+
+
+<!-- 以下是ife其他同学的代码-->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="dec-number" type="number" placeholder="输入一个十进制非负整数">
+    <button id="trans-btn">转化为二进制</button>
+    <p id="result">运算结果</p>
+    <script>
+		function dec2bin(decNumber) {
+		    // 在这里实现你的转化方法，注意需要判断输入必须为一个非负整数
+		    
+		   	var reg=/^\d+$/;//非负整数
+		    if(reg.test(decNumber)){
+				var a=Number(decNumber);
+				var temp=2;
+				var b=null;
+				var arr=[];
+				//当被除数不为零的时候
+				while(temp!=0){
+					//求余数
+					b=a%2;
+					temp=parseInt(a/2);
+					//改变被除数
+					a=temp;
+					arr.push(b)
+				}
+				
+		    }else{
+		    	alert("请输入一个非负整数")
+		    }
+		    return arr.reverse().join("");
+		}
+		
+		// 实现党点击转化按钮时，将输入的十进制数字转化为二进制，并显示在result的p标签内
+		// Some coding
+		var btn=document.getElementById("trans-btn");
+		btn.onclick=function(){
+			var val=document.getElementById("dec-number").value;
+			var p=document.getElementById("result");
+			p.innerHTML+=":"+dec2bin(val);
+		}
+		
+		
+		
+    </script>
+</body>
+</html> -->
