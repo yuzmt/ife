@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="firstNumber" type="number" value="0" placeholder="第一个数字">
+    <input id="secondNumber" type="number" value="0" placeholder="第二个数字">
+    <button id="addBtn">加</button>
+    <button id="minusBtn">减</button>
+    <button id="timesBtn">乘</button>
+    <button id="divideBtn">除</button>
+    <p id="result">运算结果</p>
+    <script>
+    	document.getElementById("addBtn").onclick = function() {
+	document.getElementById("result").innerHTML =parseInt(document.getElementById
+	("firstNumber").value)  + parseInt(document.getElementById
+	("secondNumber").value);
+}
+
+document.getElementById("minusBtn").onclick = function() {
+	document.getElementById("result").innerHTML = document.getElementById
+	("firstNumber").value - document.getElementById
+	("secondNumber").value;
+}
+
+document.getElementById("timesBtn").onclick = function() {
+	document.getElementById("result").innerHTML = document.getElementById
+	("firstNumber").value * document.getElementById
+	("secondNumber").value;
+}
+
+document.getElementById("divideBtn").onclick = function() {
+	
+		document.getElementById("result").innerHTML = document.getElementById
+	("firstNumber").value / document.getElementById("secondNumber").value;
+	
+}
+    </script>
+</body>
+</html>
+
+
+<!-- 方法二 （别人的代码）-->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>IFE ECMAScript</title>
+</head>
+
+<body>
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn" onclick="calculation('add')">加</button>
+    <button id="minus-btn" onclick="calculation('minus')">减</button>
+    <button id="times-btn" onclick="calculation('times')">乘</button>
+    <button id="divide-btn" onclick="calculation('divide')">除</button>
+    <p id="result">运算结果</p>
+    <script>
+        // 统一成一个方法根据传值的值判断需要什么计算，减少代码量而且也工整
+        function calculation(id) {
+            // 每次执行函数时候缓存需要用到的变量，减少每次dom查找的性能损失
+            // DOM查找是十分消耗性能的
+            var firstNumber = parseInt(document.getElementById('first-number').value, 10);
+            var secondNumber = parseInt(document.getElementById('second-number').value, 10);
+            
+            // 使用$符号开头命名对象
+            var $result = document.getElementById("result");
+            try {
+                if (isNaN(firstNumber) || isNaN(secondNumber))  throw "请输入数字！";
+                if (firstNumber==="" || secondNumber==="")        throw "empty";
+                if (id==='divide' && secondNumber ===0)         throw "除数不能为0";
+            }
+            catch (err) {
+                console.log("Error:" + err + ".");
+            }
+            if (id === 'add') {
+                $result.innerHTML = firstNumber + secondNumber;
+            } else if (id === 'minus') {
+                $result.innerHTML = firstNumber - secondNumber;
+            } else if (id === 'times') {
+                $result.innerHTML = firstNumber * secondNumber;
+            } else if (id === 'divide') {
+                $result.innerHTML = firstNumber / secondNumber;
+            }
+        }
+    </script>
+</body>
+
+</html> -->
