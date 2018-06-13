@@ -40,7 +40,13 @@
 			btn.onclick = function() {
 				p.innerHTML = "运算结果：" + dec2bin(document.getElementById("decNumber").value);
 			}
-
+// 			或者使用如下的方法，dec变量需要在函数内部，写到外面的话就表示是刚加载就获取值了，然后点击的时候并没有取到后来输入的值
+// 			var btn = document.getElementById("transBtn");
+// 			var p = document.getElementById("result");
+// 			btn.onclick = function() {
+// 				var dec = document.getElementById("decNumber").value;
+// 				p.innerHTML = "运算结果：" + dec2bin(dec);
+// 			}
     </script>
 </body>
 </html>
