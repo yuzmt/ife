@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="decNumber" type="number" placeholder="输入一个十进制非负整数">
+    <input id="binBit" type="number" placeholder="输入转化后二进制数字位数">
+    <button id="transBtn">转化为二进制</button>
+    <p id="result">运算结果</p>
+    <script>
+
+function dec2bin(decNumber) {
+// 在这里实现你的转化方法，注意需要判断输入必须为一个非负整数
+               
+                var num1; //商
+                var num2;//余数
+                var num = Number(decNumber);//被除数
+                var arr = [];
+                if(num < 0) {
+                    alert("请输入正数！！")
+                }else {
+                    while(num1 != 0) {
+                        num1 = parseInt(num / 2);
+                        num2 = num % 2;
+                        num = num1;
+                        arr.unshift(num2);
+                    }
+                }
+                var bin = document.getElementById("binBit").value;
+                if(bin <= arr.length) {
+                    return arr.join("");
+                }else{
+                    for(var i = 0; i <= bin - arr.length; i++) {
+                         arr.unshift("0");
+                    }
+                }      
+                    return arr.join("");
+            }
+
+// document.getElementById("transBtn").innerHTML = arr[];
+// 实现党点击转化按钮时，将输入的十进制数字转化为二进制，并显示在result的p标签内
+// Some coding
+
+
+// 实现党点击转化按钮时，将输入的十进制数字转化为二进制，并显示在result的p标签内
+// 新的需求是，转化显示后的二进制数为bin-bit中输入的数字宽度，例如
+// dec-number为5，bin-bit为5，则转化后数字为00101
+// 如果bin-bit小于转化后的二进制本身位数，则使用原本的位数，如dec-number为5，bin-bit为2，依然输出101，但同时在console中报个错
+// Some coding
+
+
+                var btn = document.getElementById("transBtn");
+                var p = document.getElementById("result");
+                btn.onclick = function() {
+                    var dec = document.getElementById("decNumber").value;
+                    p.innerHTML = "运算结果：" + dec2bin(dec);
+                }
+
+                
+    </script>
+</body>
+</html>
